@@ -1,101 +1,240 @@
-import Image from "next/image";
+import React from "react";
+import Images from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <main>
+        <section className="hero">
+          <div className="hero-text">
+            <h1 className="project-text"> PROJECT</h1>
+            <h2 className="Project-name"> Lorum</h2>
+          </div>
+          <img
+            src="/images/build.PNG"
+            alt="image-build"
+            width={770}
+            height={829}
+            className="build-image"
+          />
+          <div className="view-point-box">
+            <p>View Point</p>
+          </div>
+        </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        <section className="about-section">
+          <div className="about-content">
+            <div className="about-images">
+              <img
+                src="/images/sample1.PNG"
+                alt=" image-sample1"
+                width={270}
+                height={265}
+                className="about-image"
+              />
+              <img
+                src="/images/sample2.PNG"
+                alt=" image-sample2"
+                width={270}
+                height={265}
+                className="about-image"
+              />
+              <img
+                src="/images/sample3.PNG"
+                alt=" image-sample3"
+                width={270}
+                height={140}
+                className="about-image"
+              />
+            </div>
+            <div className="about-text">
+              <h2>About</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </section>
+        <section className="focus-section">
+          <h2> Main Focus / Mission Statement</h2>
+          <div className="focus-content">
+            <div className="focus-left">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                efficitur, lectus et facilisis placerat.
+              </p>
+            </div>
+
+            <div className="focus-right">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                efficitur, lectus et facilisis placerat, magna mauris porttitor
+                tortor, a auctor est felis ut nisl.
+              </p>
+            </div>
+          </div>
+          <br />
+        </section>
+        <section className="ourProjectsContainer">
+          <h2 className="heading">Our Projects</h2>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <div className="firstRow">
+            <div className="projectItem">
+              <div className="innerImageContainer">
+                <img
+                  src="/images/Rectangle12.PNG"
+                  alt="Image Rectangle12"
+                  className="innerImage"
+                />
+                <span className="projectTitle">
+                  Sample
+                  <br />
+                  Project
+                </span>
+              </div>
+              <img
+                src="/images/Rectangle17.PNG"
+                alt="image Rectangle17"
+                className="mainImage"
+              />
+            </div>
+
+            <div className="projectItem">
+              <img
+                src="/images/image15.PNG"
+                alt="Image image15"
+                className="mainImage"
+              />
+            </div>
+          </div>
+
+          <div className="secondRow">
+            <div className="projectItem">
+              <img
+                src="/images/image16.PNG"
+                alt="Image image16"
+                className="mainImage1"
+              />
+            </div>
+
+            <div className="projectItem">
+              <img
+                src="/images/image17.PNG"
+                alt="Image image17"
+                className="mainImage2"
+              />
+            </div>
+
+            <div className="projectItem">
+              <img
+                src="/Images/image18.PNG"
+                alt="Image image18"
+                className="mainImage3"
+              />
+            </div>
+          </div>
+         <div className="buttonContainer">
+            <button className="allProjectsButton">All Projects</button>
+          </div>
+        </section>
+        <br />
+        <br />
+
+        <br />
+
+        <section className="contact">
+          <h2>Contact Us</h2>
+          <div className="contact-content flex flex-col md:flex-row gap-8">
+            {/* Contact Form Section */}
+            <div className="contact-form w-full md:w-[391px]">
+              <form>
+                <label
+                  className="block text-sm font-medium border-gray-300"
+                  htmlFor="name"
+                ></label>
+                <input
+                  type="text"
+                  id="name"
+                  className="mt-1 block w-full p-3 border text-gray-700 rounded-md"
+                  placeholder="Your Name"
+                  required
+                />
+
+                <label
+                  className="block text-sm font-medium border-gray-300"
+                  htmlFor="phonenumber"
+                ></label>
+                <input
+                  type="text"
+                  id="phonenumber"
+                  className="mt-1 block w-full p-3 border text-gray-700 rounded-md"
+                  placeholder="Phone Number"
+                  required
+                />
+
+                <label
+                  className="block text-sm font-medium border-gray-300"
+                  htmlFor="email"
+                ></label>
+                <input
+                  type="email"
+                  id="email"
+                  className="mt-1 block w-full p-3 border border-gray-300 rounded-md"
+                  placeholder="Email"
+                  required
+                />
+
+                <label
+                  className="block text-sm font-medium border-gray-300"
+                  htmlFor="interestedin"
+                ></label>
+                <input
+                  type="text"
+                  id="interestedin"
+                  className="mt-1 block w-full p-3 border text-gray-700 rounded-md"
+                  placeholder="Interested In"
+                  required
+                />
+
+                <label
+                  className="block text-sm font-medium border-gray-300"
+                  htmlFor="message"
+                ></label>
+                <textarea
+                  id="message"
+                  className="mt-1 block w-full p-3 border text-gray-700 rounded-md"
+                  placeholder="Message"
+                  rows={4}
+                  required
+                ></textarea>
+              </form>
+
+              <button className="submit-button">Send Email</button>
+            </div>
+
+            {/* Contact Image Section */}
+            <div className="contact-image w-full md:w-[749px] md:h-[369px] flex justify-center items-center">
+              <img
+                src="/images/image12.PNG"
+                alt="Contact Us"
+                className="rounded-md w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
